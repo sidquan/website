@@ -19,6 +19,7 @@ if [[ "$*" == npm*start* ]]; then
   fi
 
   ln -sf "$GHOST_CONTENT/config.js" "$GHOST_SOURCE/config.js"
+  ln -sf "$GHOST_CONTENT" "$GHOST_CONTENT/content"
 
   chown -R user "$GHOST_CONTENT"
 

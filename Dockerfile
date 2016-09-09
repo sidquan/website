@@ -39,7 +39,7 @@ RUN buildDeps=' \
 
 ENV GHOST_CONTENT /var/lib/ghost
 RUN mkdir -p "$GHOST_CONTENT" && chown -R user:user "$GHOST_CONTENT"
-VOLUME $GHOST_CONTENT
+#COPY content $GHOST_CONTENT/
 
 COPY config.js $GHOST_CONTENT/
 ENV NODEJS_IP 0.0.0.0
@@ -48,5 +48,5 @@ ENV NODEJS_PORT 8080
 COPY docker-entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
-EXPOSE 2368
-CMD ["npm", "start"]
+EXPOSE 8080
+CMD ["npm", "start", "--production"]
