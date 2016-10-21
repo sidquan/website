@@ -2,13 +2,10 @@
 // Setup your Ghost install for various environments
 // Documentation can be found at http://support.ghost.org/config/
 
-var app_dns = 'mynameismana.com';
+var app_dns = 'YOURDOMAIN.com';
 
-var path = require('path'),
-    config;
+var path = require('path');
 var config;
-
-process.env.APP_DNS = "mynameismana.com";
 
 if (process.env.MYSQL_DB_HOST != undefined) {
     config = {
