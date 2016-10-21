@@ -1,1 +1,1 @@
-b71a9796-973a-11e6-b514-8086f2004150
+println('It is pitch black. You are likely to be eaten by a Grue.')
