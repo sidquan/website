@@ -19,7 +19,7 @@ RUN set -x \
 ENV GHOST_SOURCE /usr/src/ghost
 WORKDIR $GHOST_SOURCE
 
-ENV GHOST_VERSION 0.11.0
+ENV GHOST_VERSION 0.11.2
 
 RUN buildDeps=' \
     gcc \
@@ -38,8 +38,8 @@ RUN buildDeps=' \
   && rm -rf /tmp/npm*
 
 ENV GHOST_CONTENT /var/lib/ghost
-RUN mkdir -p "$GHOST_CONTENT" && chown -R user:user "$GHOST_CONTENT"
-#COPY content $GHOST_CONTENT/
+RUN mkdir -p "$GHOST_CONTENT" && chown -R user:user "$GHOST_CONTENT" && ln -s $GHOST_CONTENT $GHOST_CONTENT/content
+COPY content $GHOST_CONTENT
 
 COPY config.js $GHOST_CONTENT/
 ENV NODEJS_IP 0.0.0.0
