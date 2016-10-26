@@ -33,4 +33,4 @@ Feel free to submit an issue on GitHub or create a pull request.
 
 ## License
 
-Please see [accompanying file](https://github.com/TheLarsonAgency/aws-ecs-ghostjs-template/blob/master/LICENSE).
+Please see [accompanying file](https://github.com/TheLarsonAgency/aws-ecs-ghostjs-template/blob/master/LICENSE). 
