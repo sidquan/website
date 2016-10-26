@@ -1,3 +1,6 @@
 [submodule "scripts"]
 	path = scripts
 	url = https://github.com/TheLarsonAgency/aws-ecs-deploy-scripts
+[submodule "content/themes/uno-zen"]
+	path = content/themes/uno-zen
+	url = https://github.com/Kikobeats/uno-zen.git
