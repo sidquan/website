@@ -2,7 +2,7 @@
 // Setup your Ghost install for various environments
 // Documentation can be found at http://support.ghost.org/config/
 
-var app_dns = 'YOURDOMAIN.com';
+var app_dns = 'aaronsidder.com';
 
 var path = require('path');
 var config;
